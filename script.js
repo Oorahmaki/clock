@@ -1,11 +1,11 @@
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
-const date = new Date();
 
+var update = setInterval(getTime, 1000);
 
 function formatTime(time){
     if (time.length === 1){
-        return "0" + date.getHours();
+        return "0" + time;
     }
     else if (time.length === 0){
         return "00";
@@ -16,8 +16,10 @@ function formatTime(time){
 }
 
 function getTime(){
+    const date = new Date();
     hours.innerHTML = formatTime(date.getHours());
     minutes.innerHTML = formatTime(date.getMinutes());
+    console.log("uyggy")
 };
 
 getTime();
