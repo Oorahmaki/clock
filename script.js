@@ -17,8 +17,8 @@ function formatTime(time){
 
 function getTime(){
     const date = new Date();
-    hours.innerHTML = formatTime(date.getHours());
-    minutes.innerHTML = formatTime(date.getMinutes());
+    hours.innerHTML = formatTime(date.getHours().toString());
+    minutes.innerHTML = formatTime(date.getMinutes().toString());
 };
 
 getTime();
