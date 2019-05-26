@@ -11,12 +11,12 @@ body{
     margin: auto;
     border-radius: 4px;
     padding: 10px;
-    border: solid rgb(71, 18, 18) 5px;
+    border: solid rgb(58, 15, 15) 5px;
 
 }
 
 #clockFace{
-    background-color: black;
+    background-color: rgb(31, 8, 8);
     border: solid 10px #c70039;
     color: #ff5733;
     border-radius: 4px;
