@@ -19,7 +19,6 @@ function getTime(){
     const date = new Date();
     hours.innerHTML = formatTime(date.getHours());
     minutes.innerHTML = formatTime(date.getMinutes());
-    console.log("uyggy")
 };
 
 getTime();
